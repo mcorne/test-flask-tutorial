@@ -15,8 +15,9 @@
                 "FLASK_DEBUG": "0"
             },
             "args": [
+                // "init-db",
                 "run",
-                "--no-debugger",
+                // "--no-debugger",
                 // "--no-reload"
             ],
             "jinja": true

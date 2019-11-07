@@ -11,3 +11,7 @@ source envwslubuntu/bin/activate
 # import in project environment
 pip install wheel # to prevent errors such as "Failed building wheel for flask-login"
 pip install flask
+
+export FLASK_APP=flaskr
+export FLASK_ENV=development
+flask run
