@@ -11,6 +11,7 @@ source envwslubuntu/bin/activate
 # import in project environment
 pip install wheel # to prevent errors such as "Failed building wheel for flask-login"
 pip install flask
+pip install pytest coverage
 
 -- run app
 export FLASK_APP=flaskr
@@ -24,3 +25,9 @@ flask init-db
 
 -- install as package
 pip install -e .
+
+-- test
+pytest
+coverage run -m pytest
+coverage report
+coverage html
